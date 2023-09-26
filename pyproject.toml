@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "example-package-kimcharli"
+version = "0.1.0"
+description = ""
+authors = ["Charlie Kim <kimcharli@gmail.com>"]
+readme = "README.md"
+packages = [{include = "example_package_kimcharli", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+"Homepage" = "https://github.com/kimcharli/py_packaging_tutorial"
+"Bug Tracker" = "https://github.com/kimcharli/py_packaging_tutorial/issues"
