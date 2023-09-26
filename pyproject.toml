@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "example-package-kimcharli"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Charlie Kim <kimcharli@gmail.com>"]
 readme = "README.md"
