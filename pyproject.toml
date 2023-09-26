@@ -17,3 +17,10 @@ build-backend = "poetry.core.masonry.api"
 [project.urls]
 "Homepage" = "https://github.com/kimcharli/py_packaging_tutorial"
 "Bug Tracker" = "https://github.com/kimcharli/py_packaging_tutorial/issues"
+
+
+[[tool.poetry.source]]
+name = "test"
+url = "https://pypi.example.org/simple/"
+priority = "supplemental"
+
