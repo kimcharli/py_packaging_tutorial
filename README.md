@@ -29,3 +29,22 @@ poetry publish --build --repository example_package_kimcharli
 ```
 
 ## test install
+
+
+```
+python3 -m venv ~/venv/test
+source ~/venv/test/bin/activate
+pip install --index-url https://test.pypi.org/simple/ --no-deps example-package-kimcharli
+pip show example-package-kimcharli 
+```
+
+```
+(test) ckim@ckim-mbp Projects % python                             
+Python 3.11.4 (main, Jul 25 2023, 17:07:07) [Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from example_package_kimcharli.example import add_one
+>>> add_one(2)
+3
+>>> ^D
+(test) ckim@ckim-mbp Projects % 
+```
